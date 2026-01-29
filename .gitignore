@@ -416,3 +416,29 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# ==============================================================================
+# The Channel Strip - Project Specific
+# ==============================================================================
+
+# Build directories
+build/
+cmake-build-*/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.vst3
+*.component
+*.exe
+*.dll
+*.dylib
+
+# Web UI build output (generated from web-ui/)
+Resources/WebUI/*
+!Resources/WebUI/.gitkeep
+
+# BeatConnect (injected by CI)
+resources/project_data.json
